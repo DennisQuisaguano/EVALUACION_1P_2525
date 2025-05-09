@@ -1,10 +1,10 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
+# Universidad [Universidad Técnica de Ambato]  
+## Facultad de [Facultad de ingenieria industrial, sistemas y electronica]  
 ### Carrera de Ingeniería en Software  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Dennis  
+**Fecha:** 30/04/2025
 
 ---
 
@@ -37,8 +37,32 @@
   - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
 
 **📝 Respuesta:**
+- `git clone`: Copia un repositorio completo desde un servidor remoto (como GitHub) a tu computadora  
+- `fork`: Es una copia de un repositorio que se crea en tu cuenta de GitHub, no en tu PC.  
+- `git pull`: Descarga y fusiona los últimos cambios del repositorio remoto a tu rama local.
 
 <!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+
+  - ¿Cómo se realizó el fork?
+    
+    Primero, abrimos el repositorio que deseamos hacer el fork, que en este caso sería:
+    https://github.com/santiagojara/EVALUACION_1P_2525.git
+
+   Seguidamente, hacemos clic en el botón "Fork" (ubicado en la esquina superior derecha de la página de GitHub).
+   GitHub nos pedirá confirmar en qué cuenta se hará el fork. Podemos asignarle un nuevo nombre al repositorio si lo deseamos, o dejar el mismo nombre.
+
+   Una vez confirmado, GitHub creará una copia del repositorio original en tu cuenta, lista para que puedas modificarla sin afectar el proyecto original.
+   
+
+  - ¿Cómo se realizó el clone del fork?
+   
+   Se realizó el clone del fork mediante el comando git clone https://github.com/DennisQuisaguano/EVALUACION_1P_2525.git. Este comando permite descargar una copia exacta del repositorio fork desde GitHub hacia el equipo local. Al clonar el fork, se obtiene todo el historial del proyecto, incluyendo archivos, ramas y commits, lo que permite trabajar de manera independiente en el desarrollo sin afectar el repositorio original.
+
+  - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
+
+   Para verificar que se estaba trabajando sobre el fork y no sobre el repositorio original, se utilizó el comando git remote -v. Este comando muestra las URLs asociadas al repositorio local. Al ejecutarlo, se confirmó que la URL del remoto apuntaba al fork personal (por ejemplo, https://github.com/DennisQuisaguano/EVALUACION_1P_2525.git) y no al repositorio original (https://github.com/santiagojara/EVALUACION_1P_2525.git).
+
+   ![Logo del proyecto](/Imagenes/Imagen1.jpg)
 
 ---
 
@@ -60,6 +84,13 @@
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+
+1.-  Se puso las reglas para el .gitignore
+![Imagen .gitignore](/Imagenes/Imagen2.jpg)
+
+2. El archivo .gititnore nos ayuda a que no tenga seguimitos a las archivos que restriguimos.
+![Imagen .gitignore](/Imagenes/Imagen.gitignore.jpg)
+
 
 ---
 
@@ -91,6 +122,18 @@
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
 
+Los comandos utlizados para esta pregunta fueron:
+1) git flow feature start cambiar-encabezado
+2) git status
+3) git add .
+4) git commit -m "Se agrego los datos personales del estudiante en el encabezado del archivo readme"
+5) git status 
+3) git add .
+4) git commit -m "Se agrego los datos generales de la universidad tales como el nombre, la facultad"
+5) git flow feature finish cambiar-encabezado
+
+
+![Imagen .gitignore](/Imagenes/Pregunta3.jpg)
 ---
 
 ## Pregunta 4 (2 puntos)
@@ -123,6 +166,18 @@
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+ 🔹¿Qué es un issue en GitHub?
+Un issue en GitHub es una herramienta que permite registrar tareas, reportar errores, hacer preguntas o proponer mejoras dentro de un repositorio. Los issues facilitan la organización y seguimiento del trabajo en equipo, ya que pueden incluir etiquetas, comentarios, asignaciones y referencias a ramas o commits. Son fundamentales para planificar y comunicar el desarrollo de un proyecto de forma colaborativa.
+
+🔹 ¿Qué es un pull request y cuál es su finalidad?
+Un pull request (PR) es una solicitud que se hace para que los cambios realizados en una rama (ya sea en el mismo repositorio o en un fork) sean revisados y fusionados en otra rama principal, como main o develop. Su finalidad es permitir la revisión del código antes de integrarlo al proyecto oficial, facilitando la colaboración, la detección de errores y el control de calidad dentro del equipo de desarrollo.
+
+🔹 ¿Cuál es la diferencia entre issue y pull request y cómo se relacionan?
+La principal diferencia entre un issue y un pull request es que el issue sirve para plantear un problema o tarea, mientras que el pull request propone una solución concreta con código. Se relacionan en un entorno colaborativo porque un pull request puede estar vinculado a un issue específico, y al ser aceptado, puede cerrar automáticamente ese issue, manteniendo el flujo de trabajo claro y ordenado.
+
+
+
+
 
 ---
 
